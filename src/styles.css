@@ -74,7 +74,7 @@
   .hamburger-menu {
     min-width: 24px;
     min-height: 24px;
-    background-color: #000000;
+    background-color: #ffcc4b;
     border: none;
     border-radius: 6px;
   }
@@ -102,6 +102,7 @@
   .hero-info-container h1 {
     font-size: 24px;
     text-align: center;
+    line-height: 1.3;
   }
 
   .hero-info-container p {
@@ -117,20 +118,64 @@
   }
 
   .hero-btns button {
+    margin-bottom: 32px;
     padding: 4px 10px;
     border-radius: 10px;
     font-size: 13px;
   }
 
   .buy-btn {
-    background-color: #ed5357;
-    color: #ffffff;
+    background-color: #ffcc4b;
+    color: #1d1d1d;
     border: none;
     font-weight: 600;
   }
 
   .how-btn {
     background-color: #ffffff;
-    border: 1px solid #ed5357;
-    color: #ed5357;
+    border: 1px solid #000000;
+    color: #000000;
+  }
+
+  .key-points-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 16px;
+  }
+
+  .key-point {
+    padding: 8px 16px;
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    background-color: #ffffff;
+    border: 1px solid #cacaca;
+    border-radius: 8px;
+  }
+
+  .key-point-icon {
+    background-color: #ffcc4b;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .key-point-icon svg {
+    min-width: 24px;
+    min-height: 24px;
+  }
+
+  .key-point-content {
+    align-items:start;
+  }
+
+  .key-point-content h2 {
+    font-size: 18px;
+  }
+
+  .key-point-content p {
+    font-size: 12px;
+    color: #000000;
   }
