@@ -7,9 +7,9 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #2b2e32;
+  background-color: #cacaca;
   border-radius: 10px;
-  border: 3px solid #222529;
+  border: 3px solid #ffffff;
 }
 
 *, *::before, *::after {
@@ -25,9 +25,6 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
-
-  /* for footer */
-  /* padding-bottom: 50px; */
 }
 
 img, picture, video, canvas, svg {
@@ -57,9 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS reset above ^^^ */
 
 .wrapper {
-  /* min-height: 100vh; Ensures it takes at least the full viewport height */
-  /* display: flex;
-  flex-direction: column; */
+  min-height: 100vh; 
   padding: 20px;
 }
 
@@ -233,12 +228,12 @@ h2 {
 }
 
 footer {
-  width: 100%; /* Ensures it spans the full width */
+  width: 100%;
   padding: 12px;
 }
 
 footer {
-  margin-top: 32px;
+  margin-top: 20px;
   background-color: #ffcc4b;
 }
 
@@ -276,7 +271,7 @@ footer h3 {
 .footer-main {
   padding: 8px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+  grid-template-columns: repeat(auto-fit, max(120px));
   justify-content: center;
   align-items: center;
 }
