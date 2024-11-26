@@ -251,7 +251,7 @@ h1 {
 }
 
 .key-points-container {
-  margin: 0 0 32px 0;
+  margin: 16px 0 32px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 16px;
@@ -265,7 +265,7 @@ h1 {
   align-items: center;
 
   background-color: #ffffff;
-  border: 1px solid #cacaca;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
 }
 
@@ -310,7 +310,7 @@ h2 {
   flex-direction: column;
   padding: 16px;
   gap: 16px;
-  border: 1px solid #cacaca;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
 }
 
@@ -366,6 +366,7 @@ footer p {
 .footer-main {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .footer-logo {
@@ -379,7 +380,7 @@ footer h3 {
 }
 
 .social-media {
-  margin: 16px 0 0 0;
+  margin: 24px 0 8px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -409,9 +410,6 @@ footer h3 {
   text-align: center;
 }
 
-/* xs
-@media (min-width: 475px) {} */
-
 /* sm */
 @media (min-width: 600px) {
   .nav-buttons {
@@ -440,16 +438,86 @@ footer h3 {
   .hamburger-menu {
     display: none;
   }
+
+  .home-hero {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .hero-img-container {
+    width: 87%;
+    min-height: 240px;
+    max-width: 800px;
+  }
+
+  .hero-info-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
+
+  .hero-heading {
+    text-align: left;
+    font-size: 40px;
+  }
+
+  .hero-info-container .subheading {
+    text-align: left;
+  }
+
+  .hero-btns {
+    justify-content: start;
+    margin-top: auto;
+  }
+
+  .hero-btns button {
+    margin-bottom: 0px;
+  }
 }
 
 /* md */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .hero-img-container {
+    width: 87%;
+    min-height: 320px;
+    max-width: 800px;
+  }
+
+  .hero-heading {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+}
 
 /* lg */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  .hero-img-container {
+    width: 80%;
+    min-height: 300px;
+    max-width: 800px;
+  }
+}
 
 /* xl */
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+  .wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* 2xl */
-@media (min-width: 1536px) {}
+  .header-wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-img-container {
+    width: 80%;
+    min-height: 300px;
+    max-width: 800px;
+  }
+}
