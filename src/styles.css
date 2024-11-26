@@ -410,6 +410,65 @@ footer h3 {
   text-align: center;
 }
 
+/* .menu-items-container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.menu-heading-container {
+  margin-bottom: 32px;
+}
+
+.menu-subheading {
+  text-align: center;
+  font-size: 14px;
+}
+
+.menu-items-container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 296px));
+  grid-gap: 16px;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+}
+
+.menu-item-img {
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.menu-item-price-container {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item-price {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.order-btn {
+  padding: 4px 10px;
+  background-color: #ffcc4b;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
 /* sm */
 @media (min-width: 600px) {
   .nav-buttons {

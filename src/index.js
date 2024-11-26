@@ -10,6 +10,11 @@ const xBtn = document.querySelector('.x-btn')
 
 const content = document.getElementById('content')
 const homeBtn = document.querySelector('.home-btn')
+const menuBtn = document.querySelector('.menu-btn')
+
+
+const homeSide = document.getElementById('home-side')
+const menuSide = document.getElementById('menu-side')
 
 function toggleSidebar() {
   sidebar.classList.toggle('active');
@@ -34,6 +39,9 @@ hamburgerMenu.addEventListener('click', toggleSidebar);
 overlay.addEventListener('click', toggleSidebar);
 xBtn.addEventListener('click', toggleSidebar)
 homeBtn.addEventListener('click', () => displayContent('home'))
-// document.addEventListener('DOMContentLoaded', () => {
-//   displayContent();
-// });
+homeSide.addEventListener('click', () => displayContent('home'))
+menuBtn.addEventListener('click', () => displayContent('menu'))
+menuSide.addEventListener('click', () => displayContent('menu'))
+document.addEventListener('DOMContentLoaded', () => {
+  displayContent('home');
+});

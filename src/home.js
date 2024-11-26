@@ -1,7 +1,3 @@
-import instagramIcon from "./images/instagram.svg";
-import twitterIcon from "./images/twitter.svg";
-import facebookIcon from "./images/facebook.svg";
-
 export const home = `
     <div class="wrapper">
       <section class="home-hero">
@@ -96,27 +92,4 @@ export const home = `
         </div>
       </section>
     </div>
-    <footer>
-      <div class="footer-main">
-        <div class="footer-menu">
-          <h3>Menu</h3>
-          <p>Home</p>
-          <p>Offers</p>
-          <p>Service</p>
-          <p>About Us</p>
-        </div>
-        <div class="footer-contact">
-          <h3>Contact</h3>
-          <p>+123 456 789</p>
-          <p>Explore</p>
-          <p>info@baratie.com</p>
-          <p>1245, East Blue, JPN</p>
-        </div>
-      </div>
-      <div class="social-media">
-        <img src="${instagramIcon}" class="social-media-icon">
-        <img src="${twitterIcon}" class="social-media-icon">
-        <img src="${facebookIcon}" class="social-media-icon">
-      </div>
-    </footer>
 `
