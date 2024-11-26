@@ -410,11 +410,6 @@ footer h3 {
   text-align: center;
 }
 
-/* .menu-items-container {
-  display: flex;
-  flex-direction: column;
-} */
-
 .menu-heading-container {
   margin-bottom: 32px;
 }
@@ -468,6 +463,79 @@ footer h3 {
   font-size: 14px;
 }
 
+.chef-heading-container {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef-subheading {
+  text-align: center;
+  font-size: 14px;
+  max-width: 300px;
+}
+
+.job-btn {
+  margin-top: 12px;
+  padding: 4px 10px;
+  background-color: #ffcc4b;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chef-members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-gap: 16px;
+  justify-content: center;
+}
+
+.chef {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.chef-img {
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.chef-name, .chef-position, .chef-description {
+  text-align: center;
+}
+
+.chef-name {
+  font-size: 18px;
+}
+
+.chef-position {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.chef-description {
+  font-size: 14px;
+  margin: 8px 0 16px 0;
+}
+
+.chef-social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.chef-social-media-icon {
+  max-height: 18px;
+}
+
 
 /* sm */
 @media (min-width: 600px) {
@@ -480,12 +548,13 @@ footer h3 {
   .nav-btn {
     background-color: transparent;
     border: none;
+    border-radius: 8px;
+    padding: 4px 10px;
     font-size: 14px;
+    transition: 0.3s;
   }
 
-  .home-btn {
-    padding: 4px 10px;
-    border-radius: 8px;
+  .nav-btn:hover {
     background-color: #ffcc4b;
     font-weight: 600;
   }
