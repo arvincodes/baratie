@@ -101,6 +101,85 @@ nav {
   stroke-width: 2;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #ffcc4b;
+  color: #000000;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+.aside-header {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.x-btn {
+  background-color: #ffcc4b;
+  border: none;
+}
+
+.github-icon-side {
+  max-height: 22px;
+  cursor: pointer;
+}
+
+.x-icon {
+  max-height: 22px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.sidebar ul li {
+  margin:12px 0;
+}
+
+.sidebar ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-weight 0.3s;
+}
+
+.sidebar ul li a:hover {
+  font-weight: 700;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.sidebar.active {
+  right: 0;
+}
+.overlay.active {
+  display: block;
+}
+
 .home-hero {
   display: flex;
   flex-direction: column;
