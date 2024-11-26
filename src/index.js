@@ -23,12 +23,13 @@ function toggleSidebar() {
 }
 
 function displayContent(contentCategory) {
+
   if (contentCategory === 'home') {
-    content.innerHTML = home
+    content.innerHTML = home;
   } else if (contentCategory === 'menu') {
-    content.innerHTML = menu
+    content.innerHTML = menu;
   } else if (contentCategory === 'about') {
-    content.innerHTML = about
+    content.innerHTML = about;
   }
 }
 
