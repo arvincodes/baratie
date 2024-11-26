@@ -81,12 +81,24 @@ nav {
   max-height: 50px;
 }
 
+.nav-buttons {
+  display: none;
+}
+
+.github-icon {
+  display: none;
+}
+
 .hamburger-menu {
   min-width: 24px;
   min-height: 24px;
   background-color: #ffcc4b;
   border: none;
   border-radius: 6px;
+}
+
+.hamburger-menu svg {
+  stroke-width: 2;
 }
 
 .home-hero {
@@ -317,3 +329,48 @@ footer h3 {
   margin-top: 8px;
   text-align: center;
 }
+
+/* xs
+@media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 600px) {
+  .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .nav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+  }
+
+  .home-btn {
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: #ffcc4b;
+    font-weight: 600;
+  }
+
+  .github-icon {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {}
+
+/* lg */
+@media (min-width: 1024px) {}
+
+/* xl */
+@media (min-width: 1280px) {}
+
+/* 2xl */
+@media (min-width: 1536px) {}
