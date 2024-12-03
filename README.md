@@ -10,6 +10,7 @@
   ![Static Badge](https://img.shields.io/badge/HTML-d35836?style=for-the-badge&logo=html5&logoColor=white)
   ![Static Badge](https://img.shields.io/badge/CSS-4286c2?style=for-the-badge&logo=css3&logoColor=white)
   ![Static Badge](https://img.shields.io/badge/JAVASCRIPT-f3e050?style=for-the-badge&logo=javascript&logoColor=black)
+  ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
   
 </div>
 
